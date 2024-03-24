@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Push & Polish Client Waitlist</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"> <!-- Font Awesome for icons -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet"> <!-- Google Fonts -->
+   
+    <!-- set icon -->
+  <link rel="icon" type="" href="" />
+  
+    <style>
+        /* Global Reset */
+        *,
+        *::before,
+        *::after {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-image: url('artifacts/nail.gif');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-position: center;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .header {
+            padding-top: 30px; /* Reduced padding */
+            margin-bottom: 30px; /* Reduced margin */
+        }
+
+        .header h1 {
+            font-size: 3rem; /* Reduced font size */
+            margin-bottom: 20px;
+            color: white; /* Green color */
+        }
+
+        .header p {
+            font-size: 1rem; /* Reduced font size */
+            margin-bottom: 20px;
+            color: #777;
+        }
+
+       
+        .form-container {
+            background-color: rgba(255, 255, 255, 0.6); /* Increased opacity */
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            padding: 40px;
+            text-align: left;
+        }
+
+        .form-container label {
+            display: block;
+            margin-bottom: 10px;
+            font-weight: bold;
+            color: #333;
+        }
+
+        .form-container input[type="text"],
+        .form-container input[type="email"],
+        .form-container input[type="phone"],
+        .form-container select {
+            width: calc(100% - 20px);
+            padding: 15px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 1rem;
+            transition: border-color 0.3s ease;
+        }
+
+        .form-container input[type="text"]:focus,
+        .form-container input[type="email"]:focus,
+        .form-container input[type="phone"]:focus,
+        .form-container select:focus {
+            border-color: dark darkgreen; /* Green color */
+        }
+
+        .form-container button {
+            background-color: #656754;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 20px;
+            font-size: 1.1rem;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .form-container button:hover {
+            background-color: dark darkgreen; /* Darker green color */
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .header h1 {
+                font-size: 2.5rem;
+            }
+
+            .header p {
+                font-size: 1rem;
+            }
+
+            .form-container {
+                padding: 20px;
+            }
+
+            .form-container input[type="text"],
+            .form-container input[type="email"],
+            .form-container select {
+                font-size: 0.9rem;
+            }
+
+            .form-container button {
+                font-size: 1rem;
+                padding: 12px 25px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="header">
+        <h1>Push & Polish</h1>
+
+        </div>
+
+        
+    
+
+    <div class="form-container">
+
+        <p>Limited booking available! Join our waitlist to secure your spot with our talented nail technician. Experience personalized attention and top-notch nail services. Elevate your nail game today!<br><br></p>
+
+        <form action="https://formsubmit.co/2a0b9bd6114a4bde73b802bb5b963f13" method="POST">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required placeholder="Enter your name">
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required placeholder="Enter your email">
+
+            <label for="goals">Nail Goals:</label>
+            <select id="goals" name="goals">
+                <option value="Clean nails">Clean Nails</option>
+                <option value="Nail Art">Nail Art</option>
+                <option value="Longer Nails">Longer Nails</option>
+            </select>
+
+            <button type="submit">Join Waitlist <i class="fas fa-arrow-right"></i></button>
+            <input type="hidden" name="_captcha" value="false">
+            <input type="hidden" name="_next" value="https://gator.fit/index_success.html">
+        </form>
+
+    </div>
+</div>
+
+
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-TSSBJR2X9B"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-TSSBJR2X9B');
+</script>
+
+</body>
+</html>
